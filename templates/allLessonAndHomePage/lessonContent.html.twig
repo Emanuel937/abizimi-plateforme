@@ -63,16 +63,18 @@
                         </div>
                     </div>
                     {% for x in [0, 1, 2,3, 4, 7]%}
-                    <div class="row border mb-4 mx-4">
-                        <div class="col-md-3 p-0">
-                            <img src="{{asset('img/categories.jpg')}}" width="100%" style="object-fil:cover; height:100%">
-                        </div> 
-                        <div class=" col-md-9">
-                            <h2 class="h5"> Title of tutorial</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper neque vel dolor fermentum, sed tempus sapien pellentesque. In quis lobortis augue, sed fermentum eros. Etiam dapibus arcu mi. 
-                            </p>
-                            <p class="catg"><span>Categories</span> <span>level </span> <span>Task</span> <span class=" text-white bg-primary">start</span> <strong> <i class="fas fa-info"></i></strong></p>
+                    <div class=" card-categories-back">
+                        <div class="row border mb-4 mx-4">
+                            <div class="col-md-3 p-0">
+                                <img src="{{asset('img/categories.jpg')}}" width="100%" style="object-fil:cover; height:100%">
+                            </div> 
+                            <div class=" col-md-9">
+                                <h2 class="h5"> Title of tutorial</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper neque vel dolor fermentum, sed tempus sapien pellentesque. In quis lobortis augue, sed fermentum eros. Etiam dapibus arcu mi. 
+                                </p>
+                                <p class="catg"><span>Categories</span> <span>level </span> <span>Task</span> <span class=" text-white bg-primary">start</span> <strong> <i class="fas fa-info"></i></strong></p>
+                            </div>
                         </div>
                     </div>
                     {% endfor %}

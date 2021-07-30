@@ -124,11 +124,39 @@ h1{
     border:1px solid #6c63ff;
    
 }
-#main-2{
+body{
     background-color:#f5f5f5
 }
 .filter-card{
     position: absolute;
     top: 248px;
     left: 64px;
+}
+
+.card-back:after{
+    content: " ";
+    background-color: #505dba;
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    right: -14px;
+    bottom: -11px;
+    Z-index: -1;
+    border-radius: 16px;
+}
+
+.card3-back:after{
+    content: " ";
+    background-color: #1c1b40;
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    right: -14px;
+    bottom: -11px;
+    Z-index: -1;
+    border-radius: 16px;
+}
+
+.card-categories-back:after{
+    content:"hello"
 }
