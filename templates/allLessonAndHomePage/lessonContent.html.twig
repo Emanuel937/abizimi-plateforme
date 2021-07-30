@@ -1,0 +1,42 @@
+{% extends "./base.html.twig"%}
+{% block style_and_meta %}
+<title> Categories</title>
+{% endblock %}
+{% block C_links %}
+    <link href="{{asset('/css/allLessonAndHomeCss/categories.css')}}" rel="stylesheet"/>
+{% endblock %}
+{% block main %}
+    <main>
+       <div class="border">
+          <h1 class="h5 text-gray mx-5">Selected: PHP </h1> 
+       </div>
+       <section>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex my-4 mx-2">
+                        <input class="form-scontrol" type="search" placeholder="type here the programming language ...">
+                        <button class="p-1"> <i class="fas fa-search"></i> </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="{{asset('img/categories.jpg')}}" width="100%">
+                        </div> 
+                        <div class="col-md-9">
+                            <h2 class="h4"> Title of tutorial</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </main>
+{% endblock %}
+{% block customizeJS %}
+{% endblock %}
+        
+       
+
+
+
+

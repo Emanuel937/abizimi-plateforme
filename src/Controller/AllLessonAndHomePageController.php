@@ -28,7 +28,7 @@
             return $this->render('allLessonAndHomePage/lessonCategories.html.twig',['allLessonData'=>$allLessonData]);
         }
         /**
-         * @Route("/programing_language_lessons", name="lessonContent")
+         * @Route("/programming_language_lessons", name="lessonContent")
          */
         public function lessonContent(){
             return $this->render('allLessonAndHomePage/lessonContent.html.twig');
