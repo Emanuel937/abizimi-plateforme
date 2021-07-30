@@ -71,6 +71,9 @@ p, li{
     line-height: 23px;
     font-size:'times'
 }
+#main-2 .catg-span-second{
+    color:#3c3838a1;
+}
 ul, ol {
     list-style-type: none;
 }

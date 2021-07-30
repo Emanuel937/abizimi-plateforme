@@ -16,11 +16,33 @@
                 <div class="col-md-4">
                  <img src="{{asset('img/lateral.svg')}}">
                  <div class="filter-card">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2 class="h5">Filter</h2>
+                    <div class="card" style="width:300px">
+                        <div class="card-header bg-light d-flex justify-content-between pr-5 pl-2">
+                            <h2 class="h5   "><i class="fas fa-filter h6"></i> Filter</h2>
+                            <p class="border-bottom-0  mx-5"><a href="#">Restart</a></p>
                         </div>
-                       
+                       <div class="card-body">
+                            <h3 class="h6">Categories:</h3>
+                            <p class="catg d-flex flex-wrap">
+                                <span class="m-1"> Web developpeur</span>
+                                <span  class="m-1">Mobile</span>
+                                <span class="m-1"> Desktop</span>
+                                <span  class="m-1">Mobile</span>
+                                <span>AI</span>
+                            </p>
+                            <h3 class="h6">Level:</h3>
+                            <p class="catg d-flex flex-wrap">
+                                <span class="m-1"> Junior </span>
+                                <span  class="m-1">Senior</span>
+                                <span class="m-1"> Media</span>
+                            </p>
+                            <h3 class="h6">Tak:</h3>
+                            <p class="catg d-flex flex-wrap">
+                                <span class="m-1"> Php </span>
+                                <span  class="m-1">python</span>
+                                <span class="m-1"> React</span>
+                            </p>
+                       </div>
                     </div>
                  </div>
                 </div>
@@ -32,7 +54,12 @@
                     <div class="mx-4 d-flex  justify-content-between  mb-2">
                         <h2 class="h6"> 123 Result </h2>
                         <div>
-                            <button class="btn border"> <i class="fas fa-sort-amount-up"></i> Filter by: <span>Pertinance</span></button>
+                            <button class="btn border"> <i class="fas fa-sort-amount-up"></i> Filter by: 
+                                <select>
+                                 <option>Pertinance</option>
+                                 <option>Last<option>
+                                </select>
+                            </button>
                         </div>
                     </div>
                     {% for x in [0, 1, 2,3, 4, 7]%}
@@ -41,11 +68,11 @@
                             <img src="{{asset('img/categories.jpg')}}" width="100%" style="object-fil:cover; height:100%">
                         </div> 
                         <div class=" col-md-9">
-                            <h2 class="h4"> Title of tutorial</h2>
+                            <h2 class="h5"> Title of tutorial</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper neque vel dolor fermentum, sed tempus sapien pellentesque. In quis lobortis augue, sed fermentum eros. Etiam dapibus arcu mi. 
                             </p>
-                            <p class="catg"><span>Categories</span> <span>level </span> <span>Task</span></p>
+                            <p class="catg"><span>Categories</span> <span>level </span> <span>Task</span> <span class=" text-white bg-primary">start</span> <strong> <i class="fas fa-info"></i></strong></p>
                         </div>
                     </div>
                     {% endfor %}
