@@ -1,0 +1,128 @@
+{% extends "./base.html.twig" %}
+{% block style_and_meta %}
+<title> Categories</title>
+{% endblock %}
+{% block C_links %}
+    <link href="{{asset('/css/allLessonAndHomeCss/categories.css')}}" rel="stylesheet"/>
+{% endblock %}
+{% block main %}
+    <main>
+        <section class="row">
+        <h1 class="text-white text-center">Développeur web</h1>
+        <p class="text-white text-center"><i class="fas fa-book-reader"></i></p>
+           <div  id="categories">
+               <div class="card">
+                <ul>
+                    {% for x in [1, 4, 5, 6, 7] %}
+                    <li class=" text-center"> 
+                     <img src="{{asset('/img/test.svg')}}" width="30px" alt="icon">
+                      <span> Développeur web </span>
+                     </li>
+                    {% endfor %}
+                </ul>
+               </div>
+           </div>
+        </section>
+        <div id="search">
+            <input type="search" class="form-control" id="search" placeholder="Search a tutorial">
+        </div>
+        <section>
+        <div class="topics">
+            <p >
+               <span> Programming languages(12) </span>
+               <span> Lesson(12) </span>
+               <span> Junior(30) </span>
+                <span> Senior(42) </span>
+            </p>
+        </div>
+        {% for x in [1]%}
+         <div class="lesson">
+            <h2> <img src="{{asset('/img/book.svg')}}">Subcategories <span><i class="fas fa-angle-double-right"></i></span></h2>
+           
+            <div class="list-categories">
+                {% for x in [1, 2, 3, 4, 5, 6]%}
+                <div class="card">
+                    <div>
+                        <img src="{{asset('/img/virtual.png')}}">
+                    </div>
+                    <div class="lesson-title">
+                        <p> Abizimi's lesson <i class="fas fa-info-circle"></i> </p>
+                        <h3>Lesson-title</h3>
+                    </div>
+                </div>
+                  {% endfor %}
+            </div>
+          
+        </div>
+        {% endfor %}
+        <div class="second-category">
+            {% for x in [1]%}
+         <div class="lesson">
+            <h2> <img src="{{asset('/img/book.svg')}}">Subcategories <span><i class="fas fa-angle-double-right"></i></span></h2>
+           
+            <div class="list-categories">
+                {% for x in [1, 2, 3]%}
+                <div class="card">
+                    <div>
+                        <img src="{{asset('/img/virtual.png')}}">
+                    </div>
+                    <div class="lesson-title">
+                        <p> Abizimi's lesson <i class="fas fa-info-circle"></i> </p>
+                        <h3>Lesson-title</h3>
+                    </div>
+                </div>
+                  {% endfor %}
+            </div>
+          
+        </div>
+        {% endfor %}
+        </div>
+                  {% for x in [1, 2]%}
+         <div class="lesson" style="margin-bottom:20px"> 
+            <h2> <img src="{{asset('/img/book.svg')}}">Subcategories <span><i class="fas fa-angle-double-right"></i></span></h2>
+           
+            <div class="list-categories">
+                {% for x in [1, 2, 3]%}
+                <div class="card">
+                    <div>
+                        <img src="{{asset('/img/virtual.png')}}">
+                    </div>
+                    <div class="lesson-title">
+                        <p> Abizimi's lesson <i class="fas fa-info-circle"></i> </p>
+                        <h3>Lesson-title</h3>
+                    </div>
+                </div>
+                  {% endfor %}
+            </div>
+          
+        </div>
+        {% endfor %}
+        </section>
+        <div aria-label="Page navigation example" style="width:50%;margin:auto">
+            <ul class="pagination">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <!-- nothing -->
+    </main>
+{% endblock %}
+{% block customizeJS %}
+{% endblock %}
+        
+       
+
+
+
+

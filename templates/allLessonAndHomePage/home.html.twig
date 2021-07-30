@@ -1,0 +1,118 @@
+{% extends "./base.html.twig" %}
+{% block style_and_meta %}
+<title> Abizimi-plaform's HOME</title>
+{% endblock %}
+{% block C_links %}
+    <link href="{{asset('/css/allLessonAndHomeCss/home.css')}}" rel="stylesheet"/>
+{% endblock %}
+{% block main %}
+<main>
+    <section id="video_background">
+        <!-- set a video backgroud here  -->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{asset('img/virtual.png')}}" width="80%">
+            </div>
+            <div class="col-md-6 text-center" >``
+                <div style="width:80%">
+                    <h1> 
+                    Learn how to code & robot easily with Abizimi plateform !!!
+                    </h1>
+                    <button class="btn bg-blue text-white"><a class="text-white text-decoration-none" href="{{path('signup')}}">start</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="text-center" id="h2"> What is Abizimi platerform ?</h2>
+        <p class="text-center width-60"> <i class="fab fa-connectdevelop" style="color:#4479dc;font-size:25px"></i> There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec ipsum at libero luctus venenatis eu a ante. Aliquam mattis tristique gravida.</p>
+        <div class="flex-my ">
+            <div class="row">
+                <div class="col-md-3 card border border-info">
+                    <p class="text-center"><i class="fas fa-code"></i></p>
+                    <h3>Web developper</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet tincidunt sem. Etiam lacinia ante ut diam condimentum rutrum. Fusce eget arcu mi.<p>
+                </div>
+                <div class="col-md-3 card border border-info ">
+                    <p class="text-center"><i class="fas fa-mobile-alt"></i></p>
+                    <h3>Web mobile</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet tincidunt sem. Etiam lacinia ante ut diam condimentum rutrum. Fusce eget arcu mi.<p>
+                </div>
+                <div class="col-md-3 card border border-info">
+                    <p class="text-center"><i class="fas fa-robot"></i></p>
+                    <h3>Robotique</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet tincidunt sem. Etiam lacinia ante ut diam condimentum rutrum. Fusce eget arcu mi.<p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-my ">
+            <div class="row">
+                <div class="col-md-3 card border border-info">
+                    <p class="text-center"><i class="fas fa-database"></i></p>
+                    <h3>Big data</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet tincidunt sem. Etiam lacinia ante ut diam condimentum rutrum. Fusce eget arcu mi.<p>
+                </div>
+                <div class="col-md-3 card border border-info">
+                    <p class="text-center"><i class="fab fa-mailchimp"></i></p>
+                    <h3>Intaligence Artificial</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet tincidunt sem. Etiam lacinia ante ut diam condimentum rutrum. Fusce eget arcu mi.<p>
+                </div>
+                    <div class="col-md-3 ">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex-cour">
+        <div class="row">
+            <div class="col-md-8">
+                <h2><span>Vous pouvez mettre votre cours</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis, diam ac faucibus pulvinar, ipsum libero rhoncus magna, commodo finibus justo magna sit amet purus<p>
+                <ul id="steps">
+                    <li>Créer un compte "editor" </li>
+                    <li> Acceder à votre compte editor </li>
+                    <li>clicker sur menu" créer un cours"</li>
+                    <li>clicker sur publier</li>
+                </ul>
+                <button class="btn bg-blue text-white"><a class="text-white text-decoration-none" href="{{path('signup')}}">become couch </a><i class="fas fa-fighter-jet"></i></button>
+            </div>
+            <div class="col-md-4">
+                <img src="{{asset('/img/work.jpg')}}" alt="publish your programming languages lesson " width="100%">
+            </div>
+        </div>
+        <div class="row done" style="margin-top:80px">
+                <div class="col-md-5">
+                <img src="{{asset('/img/programmer.jpg')}}" alt="publish your programming languages lesson " width="100%">
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-4">
+                <h2><span>Les avantages</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis, diam ac faucibus pulvinar, ipsum libero rhoncus magna, commodo finibus justo magna sit amet purus<p>
+                <ol>
+                    <li><i class="fas fa-check"></i>Dès project à realiser</li>
+                    <li><i class="fas fa-check"></i> Dès professeurs disponible </li>
+                    <li><i class="fas fa-check"></i> un guie pour vous</li>
+                    <li><i class="fas fa-check"></i> um chat pour parler avec vos colleuge et profs</li>
+                </ol>
+                <button class="btn bg-blue text-white"><a class="text-white text-decoration-none" href="{{path('signup')}}">Become student</a> <i class="fas fa-fighter-jet"></i></button>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+{% block customizeJS %}
+{% endblock %}
+        
+       
+
+
+
+

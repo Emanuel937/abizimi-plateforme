@@ -1,0 +1,124 @@
+
+body{
+    margin:0;
+    counter-reset:steps;
+}
+main section:first-child{
+    padding:100px;
+    background-image: url('/img/wave.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    background-position: bottom;
+    padding-bottom:250px;  
+    font-size:12px    
+}
+main h2, main h3, footer article h2, footer article h3{
+    color:#10162f
+}
+main section h2 {
+ color:#10162f;
+ font-size:24px
+} 
+
+
+#h2::after{
+    display: inline-block;
+    content: "";
+    border-top: 4px solid #7f93ff;
+    width: 6rem;
+    margin: 0px -3rem;
+    transform: translateY(9px);
+    border-radius: 100px;
+}
+#h2::before{
+    display: inline-block;
+    content: "";
+    border-top: 4px solid #e2f;
+    width: 6rem;
+    border-radius: 100px;
+    position: relative;
+    top: 14px;
+    left: 32%;
+}
+.flex-my{
+    width: 74%;
+    margin: 25%;
+    margin-top: 2%;
+    margin-bottom:20px
+}
+.flex-cour{
+    width: 74%;
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:20px
+}
+
+
+.flex-cour ul li{
+    margin-top:10px
+}
+.flex-cour {
+    margin-bottom:100px;
+}
+.flex-cour  ul li::before  {
+        counter-increment: steps;                /* On incrémente le compteur section */
+        content:  counter(steps); /* On affiche le compteur */
+        border:1px solid #0dcaf0 !important;
+        padding:6px 10px 6px 10px;
+        border-radius:100px;
+        margin-right: 4px;       
+}
+ol li {
+    line-height: 35px;
+}
+ol li i{
+    color: #0dcaf0 !important
+}
+.flex-my .row > div{
+    margin:6px;
+    margin-bottom: 8px;
+}
+
+.flex-my h3{
+    text-align: center;
+}
+.flex-my p i {
+    font-size:25px;
+    margin-top:30px;
+    border:1px solid #0dcaf0 !important;;
+    padding:10px;
+    border-radius:100%;
+    height: 50px;
+    width: 50px;
+ 
+}
+#creating{
+        background-color: #7f93ff;
+        padding: 74px;
+        text-align: center;
+        margin-top: 100px;
+        background: rgb(101,52,185);
+        background: linear-gradient(90deg, rgba(101,52,185,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        
+    }
+
+#creating h2{
+    color:white;
+    font-size:30px
+}
+.flex-cour h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #10162f; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+
+ .flex-cour h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+ #done{
+     margin-top:100px
+ }

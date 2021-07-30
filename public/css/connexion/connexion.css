@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0
+}
+main > article{
+    background-color:#10162F;
+    height:100vh
+}
+.wave__2vLHf0Y8tL4XN_U-_HjEA4 {
+    position: absolute;
+    top: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#content{
+    position:absolute;
+    left:10%;
+    top:10%
+}
+#content > div {
+    display:flex
+}
